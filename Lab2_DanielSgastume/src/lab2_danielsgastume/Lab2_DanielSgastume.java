@@ -345,7 +345,7 @@ public class Lab2_DanielSgastume {
         String ubicacion = JOptionPane.showInputDialog("Ingrese la ubicacion del restaurante ");
         int cont_iguales = 0;
         if (res.size() > 0) {
-            for (int i = 0; i < res.size(); i++) {
+            for (int i = 0; i < res.size()-1; i++) {
                 if (ubicacion.equals(((Restaurante) res.get(i)).getLugar())) {
                     cont_iguales++;
                 }
@@ -358,7 +358,7 @@ public class Lab2_DanielSgastume {
                      ubicacion = JOptionPane.showInputDialog(null, "Hay un restaurante con la misma ubicacion\n"
                             + "Ingrese una nueva ubicacion:");
                     int iguales = 0;
-                    for (int i = 0; i < res.size(); i++) {
+                    for (int i = 0; i < res.size()-1; i++) {
                         if (ubicacion.equals(((Restaurante) res.get(i)).getLugar())) {
                             iguales++;
                         }
@@ -453,7 +453,7 @@ public class Lab2_DanielSgastume {
         String nom_res = JOptionPane.showInputDialog("Ingrese el nombre del restaurante: ");
         String ubicacion = JOptionPane.showInputDialog("Ingrese la ubicacion del restaurante ");
         int cont_iguales = 0;
-        for (int i = 0; i < res.size(); i++) {
+        for (int i = 0; i < res.size()-1; i++) {
             if (ubicacion.equals(((Restaurante) res.get(i)).getLugar())) {
                 cont_iguales++;
             }
